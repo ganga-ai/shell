@@ -21,7 +21,7 @@ touch README.md
 touch analysis/main.py
 
 # download client data
-curl -Lo rawdata.zip https://github.com/UofT-DSI/shell/raw/refs/heads/main/02_activities/assignments/rawdata.zip
+curl --ssl-no-revoke -LO https://github.com/UofT-DSI/shell/raw/main/02_activities/assignments/rawdata.zip
 unzip -q rawdata.zip
 
 ###########################################
@@ -31,7 +31,7 @@ unzip -q rawdata.zip
 mkdir data
 
 # 2. Move the ./rawdata directory to ./data/raw
-mv rawdata newproject/data/raw
+mv rawdata data/raw
 
 # 3. List the contents of the ./data/raw directory
 
